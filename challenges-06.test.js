@@ -96,17 +96,17 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  // let bool = arr.forEach((val, index) =>{
-  //   if(Object.values(index.name) === character){
-  //     if(Object.values(val).length > 0){
-  //       return true
-  //     }
-  //     else{
-  //       return false
-  //     }
-  //   }
-  // })
-  // return bool;
+  let bool = arr.forEach((val, index) =>{
+    if(Object.values(index.name) === character){
+      if(Object.values(val).length > 0){
+        return true
+      }
+      else{
+        return false
+      }
+    }
+  })
+  return bool;
 };
 
 /* ------------------------------------------------------------------------------------------------
