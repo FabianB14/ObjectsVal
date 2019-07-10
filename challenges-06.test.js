@@ -96,8 +96,8 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  let bool = arr.forEach((val, index) =>{
-    if(Object.values(index.name) === character){
+  let booli = arr.forEach(val =>{
+    if(Object.values(val.name) === character){
       if(Object.values(val).length > 0){
         return true
       }
@@ -106,7 +106,7 @@ const hasChildrenValues = (arr, character) => {
       }
     }
   })
-  return bool;
+  return booli;
 };
 
 /* ------------------------------------------------------------------------------------------------
